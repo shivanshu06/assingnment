@@ -1,0 +1,38 @@
+/* Sidebar.css */
+.sidebar {
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00004d;
+    padding: 20px;
+    transition: transform 0.3s;
+    transform: translateX(0);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      transform: translateX(-100%);
+    }
+
+    .close-button{
+        display: block;
+    }
+  }
+
+  @media (min-width:769px){
+    .close-button{
+        display: none;
+    }
+  }
+
+  .sidewhite{
+    color: #a7a7a7;
+  }
+  
